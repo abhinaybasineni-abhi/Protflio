@@ -7,27 +7,26 @@
 
 /* ───────────── 1. BASIC INFO ───────────── */
 export const SITE = {
-  name: 'Your Name', // shown in navbar, footer, hero, about
-  pageTitle: 'Your Name – Your Role', // browser tab title
-  role: 'Your Role', // footer subtitle
-  email: 'you@example.com',
-  // digits only, with country code, no + or spaces (e.g. 919876543210)
-  phone: '910000000000',
-  whatsappMessage: 'Hi, I visited your portfolio and would like to get in touch.',
+  name: 'Abhinay Basineni',
+  pageTitle: 'Abhinay Basineni – Full Stack Developer',
+  role: 'Aspiring Full Stack Developer',
+  email: 'abhinaybasineni@gmail.com',
+  phone: '+91 9581889452',
+  whatsappMessage: 'Hi Abhinay, I visited your portfolio and would like to connect.',
   available: true,
 };
 
 /* ───────────── 2. HERO (top of page) ───────────── */
 export const HERO = {
-  eyebrow: 'YOUR PROFESSION • YOUR SPECIALITY',
-  headline: 'YOUR NAME', // big text, use CAPS
-  roles: ['YOUR ROLE ONE', 'YOUR ROLE TWO'] as [string, string],
-  tagline: 'One sentence about what you do and the value you bring.',
+  eyebrow: 'CSE STUDENT • FULL STACK DEVELOPMENT',
+  headline: 'ABHINAY BASINENI',
+  roles: ['FULL STACK DEVELOPER', 'WEB DEVELOPER'] as [string, string],
+  tagline: 'Building responsive and user-friendly web applications through modern frontend and backend technologies.',
   primaryButton: 'EXPLORE MY WORK',
-  secondaryButton: 'Get In Touch',
-  image: '/assets/hero-red-bg.jpg', // 1920x1080, subject on the RIGHT side
-  imageAlt: 'Portrait of Your Name',
-  imagePosition: '69% center', // CSS object-position fallback
+  secondaryButton: 'GET IN TOUCH',
+  image: '/assets/hero-red-bg.jpg',
+  imageAlt: 'Professional portrait of Abhinay Basineni',
+  imagePosition: '69% center',
 };
 
 /* ───────────── 3. LOADING SCREEN ───────────── */
@@ -38,39 +37,103 @@ export const LOADER = {
 
 /* ───────────── 4. ABOUT ───────────── */
 export const ABOUT = {
-  eyebrow: 'Your Role · Your Field · Your Strength',
-  portrait: '/media/profile.webp', // 4:5 portrait photo
-  portraitAlt: 'Portrait of Your Name',
-  portraitCaption: 'Your Title', // small red text under the name on the photo
+  eyebrow: 'Aspiring Full Stack Developer · CSE Student · Technology Enthusiast',
+
+  portrait: '/media/profile.png',
+
+  portraitAlt: 'Portrait of Abhinay Basineni',
+
+  portraitCaption: 'Aspiring Full Stack Developer',
+
   paragraphs: [
-    'First paragraph: who you are and what you do, in one or two sentences.',
-    'Second paragraph: what you care about, how you work, or what you are looking for.',
+    'Hi, I am Abhinay Basineni, a Computer Science Engineering student at Annamacharya University in collaboration with NIAT. I am passionate about developing modern web applications and exploring the world of software engineering.',
+
+    'I enjoy working with frontend and backend technologies, building real-world projects, and solving programming challenges. I continuously improve my technical skills through hands-on learning, hackathons, workshops, and collaborative experiences. My goal is to become a skilled Full Stack Developer and create meaningful digital solutions.',
   ],
-  technologies: ['Skill One', 'Skill Two', 'Skill Three', 'Skill Four', 'Skill Five', 'Skill Six'],
-  focus: ['Focus Area One', 'Focus Area Two', 'Focus Area Three'],
+
+  technologies: [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React.js',
+    'Tailwind CSS',
+    'Bootstrap',
+    'Python',
+    'Node.js',
+  ],
+
+  focus: [
+    'Frontend Development',
+    'Backend Development',
+    'Full Stack Development',
+  ],
 };
 
 /* ───────────── 5. SOCIAL LINKS (footer) ───────────── */
+
 export const SOCIALS = [
-  { id: 'github', label: 'GitHub', href: 'https://github.com/your-username' },
-  { id: 'linkedin', label: 'LinkedIn', href: 'https://linkedin.com/in/your-username' },
+  {
+    id: 'github',
+    label: 'GitHub',
+    href: 'https://github.com/abhinaybasineni-abhi',
+  },
+  {
+    id: 'linkedin',
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/abhinay-basineni-87678b3a9/',
+  },
 ] as const;
 
+
 /* ───────────── 6. TECHNICAL SKILLS (6 cards look best) ───────────── */
+
 export const SKILL_CARDS: { name: string; category: string; level: string }[] = [
-  { name: 'Skill One', category: 'Tool A · Tool B', level: 'Advanced' },
-  { name: 'Skill Two', category: 'Tool A · Tool B', level: 'Advanced' },
-  { name: 'Skill Three', category: 'Tool A · Tool B', level: 'Proficient' },
-  { name: 'Skill Four', category: 'Tool A · Tool B', level: 'Proficient' },
-  { name: 'Skill Five', category: 'Tool A · Tool B', level: 'Proficient' },
-  { name: 'Skill Six', category: 'Tool A · Tool B', level: 'Proficient' },
+  {
+    name: 'Frontend Development',
+    category: 'HTML · CSS · JavaScript',
+    level: 'Proficient',
+  },
+  {
+    name: 'React Development',
+    category: 'React.js · Components',
+    level: 'Learning & Building',
+  },
+  {
+    name: 'CSS Frameworks',
+    category: 'Tailwind CSS · Bootstrap',
+    level: 'Proficient',
+  },
+  {
+    name: 'Backend Development',
+    category: 'Node.js · Express.js',
+    level: 'Foundational',
+  },
+  {
+    name: 'Programming',
+    category: 'Python · C · JavaScript',
+    level: 'Learning & Practicing',
+  },
+  {
+    name: 'Developer Tools',
+    category: 'Git · GitHub · VS Code',
+    level: 'Practicing',
+  },
 ];
+
 
 /* ───────────── 6b. TECH STACK STRIP (logos under the skills) ─────────────
  * Use names with a built-in logo: React, JavaScript, Python, FastAPI, PostgreSQL,
  * Supabase, SQLite, Three.js, GSAP. Any other name still shows as a lettered badge. */
-export const TECH_STACK: string[] = ['React', 'JavaScript', 'Python', 'PostgreSQL', 'Three.js', 'GSAP'];
-
+export const TECH_STACK: string[] = [
+  'React',
+  'JavaScript',
+  'Python',
+  'Three.js',
+  'GSAP',
+  'HTML',
+  'CSS',
+  'Node.js',
+];
 /* ───────────── 7. PROJECTS ─────────────
  * Thumbnails: put project-<n>-1.jpg, -2.jpg, -3.jpg in /public/assets/thumbnails/
  * (card cycles through 1-3). Set poster to the "-1.jpg" file.
@@ -92,70 +155,44 @@ export interface Project {
   tags?: string[];
 }
 
+
 export const PORTFOLIO_PROJECTS: Project[] = [
   {
-    id: 'project-one',
+    id: 'talkify',
     kind: 'software',
-    title: 'Project One',
-    subtitle: 'One-line subtitle',
-    category: 'Category One',
+    title: 'Talkify',
+    subtitle: 'English Learning & Interview Practice Platform',
+    category: 'Web Development',
     poster: '/assets/thumbnails/project-1-1.jpg',
-    description: 'Two sentences about what this project does, who it is for and what you did.',
-    tags: ['Tag One', 'Tag Two', 'Tag Three'],
-    // liveUrl: 'https://example.com',
-    // repoUrl: 'https://github.com/your-username/project-one',
+    liveUrl: 'https://talkify-dusky.vercel.app/',
+    description:
+      'A web application designed to help users improve their English communication and prepare for HR interviews through interactive practice experiences.',
+    tags: ['React', 'JavaScript', 'Frontend', 'Web Application'],
   },
   {
-    id: 'project-two',
+    id: 'wayfare',
     kind: 'software',
-    title: 'Project Two',
-    subtitle: 'One-line subtitle',
-    category: 'Category Two',
+    title: 'Wayfare',
+    subtitle: 'Smart Carpooling Platform',
+    category: 'Full Stack Development',
     poster: '/assets/thumbnails/project-2-1.jpg',
-    description: 'Two sentences about what this project does, who it is for and what you did.',
-    tags: ['Tag One', 'Tag Two', 'Tag Three'],
+    description:
+      'A smart carpooling platform concept that helps users connect and coordinate shared rides through a user-friendly web application.',
+    tags: ['React', 'Supabase', 'JavaScript', 'Full Stack'],
   },
   {
-    id: 'project-three',
+    id: 'campusconnect',
     kind: 'software',
-    title: 'Project Three',
-    subtitle: 'One-line subtitle',
-    category: 'Category One',
+    title: 'CampusConnect',
+    subtitle: 'Smart Campus Management Portal',
+    category: 'Internship Project · In Progress',
     poster: '/assets/thumbnails/project-3-1.jpg',
-    description: 'Two sentences about what this project does, who it is for and what you did.',
-    tags: ['Tag One', 'Tag Two', 'Tag Three'],
-  },
-  {
-    id: 'project-four',
-    kind: 'software',
-    title: 'Project Four',
-    subtitle: 'One-line subtitle',
-    category: 'Category Two',
-    poster: '/assets/thumbnails/project-4-1.jpg',
-    description: 'Two sentences about what this project does, who it is for and what you did.',
-    tags: ['Tag One', 'Tag Two', 'Tag Three'],
-  },
-  {
-    id: 'project-five',
-    kind: 'software',
-    title: 'Project Five',
-    subtitle: 'One-line subtitle',
-    category: 'Category One',
-    poster: '/assets/thumbnails/project-5-1.jpg',
-    description: 'Two sentences about what this project does, who it is for and what you did.',
-    tags: ['Tag One', 'Tag Two', 'Tag Three'],
-  },
-  {
-    id: 'project-six',
-    kind: 'software',
-    title: 'Project Six',
-    subtitle: 'One-line subtitle',
-    category: 'Category Two',
-    poster: '/assets/thumbnails/project-6-1.jpg',
-    description: 'Two sentences about what this project does, who it is for and what you did.',
-    tags: ['Tag One', 'Tag Two', 'Tag Three'],
+    description:
+      'An internship project focused on building a responsive campus management portal with student services, notices, attendance and campus information.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'UI/UX'],
   },
 ];
+
 
 /* ───────────── 8. SERVICES & PRICING ───────────── */
 export const SERVICES_PRICING = [
@@ -168,9 +205,9 @@ export const SERVICES_PRICING = [
 
 /* ───────────── 9. HEADLINE NUMBERS (under hero) ───────────── */
 export const CLIENT_STATS = [
-  { id: 'stat-1', value: 10, suffix: '+', label: 'Stat One' },
-  { id: 'stat-2', value: 5, suffix: '+', label: 'Stat Two' },
-  { id: 'stat-3', value: 3, suffix: '+', label: 'Stat Three' },
+  { id: 'stat-1', value: 3, suffix: '+', label: 'PROJECTS BUILT' },
+  { id: 'stat-2', value: 4, suffix: '+', label: 'HACKATHONS & EVENTS' },
+  { id: 'stat-3', value: 8, suffix: '+', label: 'TECHNOLOGIES' },
 ] as const;
 
 /* Derived – do not edit */
